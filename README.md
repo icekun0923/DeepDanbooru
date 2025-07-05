@@ -100,3 +100,12 @@ MyProject/
 ahoge
 ...
 ```
+
+## Add
+**Project.json option**
+```
+"gamma_schedule": [
+     { "used_epoch": 0, "gamma": 2.0 },
+     { "used_epoch": 15, "gamma": 3.5 }
+]
+```
