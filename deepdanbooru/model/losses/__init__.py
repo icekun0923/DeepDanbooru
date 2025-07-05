@@ -1,7 +1,7 @@
 import tensorflow as tf
 
 
-def focal_loss(alpha=0.25, gamma=2.0, epsilon=1e-7):
+def focal_loss(alpha=0.25, gamma=3.5, epsilon=1e-7):
     def loss(y_true, y_pred):
         value = -alpha * y_true * tf.math.pow(1.0 - y_pred, gamma) * tf.math.log(
             y_pred + epsilon
@@ -10,7 +10,8 @@ def focal_loss(alpha=0.25, gamma=2.0, epsilon=1e-7):
         )
 
         return tf.math.reduce_mean(value)
-
+    loss.gamma = gamma
+    
     return loss
 
 
