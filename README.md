@@ -101,8 +101,8 @@ ahoge
 ...
 ```
 
-## Add
-**Project.json option**
+## Added
+**project.json options**
 ```
 "gamma_schedule": [
      { "used_epoch": 0, "gamma": 2.0 },
